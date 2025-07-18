@@ -3,6 +3,7 @@ podTemplate(containers: [
 ]) {
     node(POD_LABEL) {
         stage('Hello World') {
+            checkout scm
             container('shell') {
                 sh 'echo "Hello, World!"'
             }
