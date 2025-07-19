@@ -6,7 +6,7 @@ podTemplate(containers: [
             checkout scm
             container('shell') {
                 sh 'echo "Hello, World!"'
-                sh 'new script'
+                sh 'echo new script'
             }
         }
     }
