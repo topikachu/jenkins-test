@@ -7,6 +7,7 @@ podTemplate(containers: [
             container('shell') {
                 sh 'echo "Hello, World!"'
                 sh 'echo new script'
+                sh 'echo ${ext}'
             }
         }
     }
